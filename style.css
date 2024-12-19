@@ -1,5 +1,4 @@
 
-/* Base styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -7,7 +6,7 @@ body {
 }
 
 header {
-    background: #106e2e;
+    background: #06462b;
     color: white;
     padding: 1em 0;
     text-align: center;
@@ -38,95 +37,22 @@ main {
     padding: 2em;
 }
 
-h1, h2 {
-    color: #106e2e;
-}
-
-form {
-    max-width: 400px;
-    margin: 0 auto;
-}
-
 form label, form input, form button {
     display: block;
-    width: 100%;
     margin-bottom: 1em;
 }
 
 button {
-    background: linear-gradient(90deg, #106e2e, #0c5a24);
+    background: #06462b;
     color: white;
     border: none;
     padding: 0.8em 1.5em;
     cursor: pointer;
-    transition: background 0.3s ease, transform 0.2s ease;
 }
 
-button:hover {
-    background: linear-gradient(90deg, #0c5a24, #0a4b1e);
-    transform: scale(1.05);
-}
-
-#successMessage {
-    margin-top: 1em;
+footer {
+    text-align: center;
     padding: 1em;
-    background-color: #d4edda;
-    color: #155724;
-    border: 1px solid #c3e6cb;
-    border-radius: 5px;
-    display: none;
-}
-
-.hidden {
-    display: none;
-}
-
-/* Navigation styles for hamburger menu */
-.menu-toggle {
-    display: none;
-    font-size: 1.5em;
-    cursor: pointer;
-}
-
-nav {
-    display: flex;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    gap: 1em;
-}
-
-nav ul li a {
+    background: #06462b;
     color: white;
-    text-decoration: none;
-}
-
-@media (max-width: 768px) {
-    nav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        right: 0;
-        background: #106e2e;
-        width: 100%;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 1em;
-    }
-
-    .menu-toggle {
-        display: block;
-    }
-
-    nav.active {
-        display: flex;
-    }
 }

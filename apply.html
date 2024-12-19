@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Подать резюме</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="Sat NS Логотип">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="apply.html">Подать резюме</a></li>
+                <li><a href="steps.html">Этапы трудоустройства</a></li>
+                <li><a href="about.html">О компании</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Подать резюме</h1>
+        <form id="resumeForm" enctype="multipart/form-data">
+            <label for="fio">Ф.И.О:</label>
+            <input type="text" id="fio" name="fio" placeholder="Введите ваше Ф.И.О" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Введите ваш Email" required>
+
+            <label for="position">Вакансия:</label>
+            <input type="text" id="position" name="position" placeholder="Введите желаемую вакансию" required>
+
+            <label for="resume">Резюме:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+
+            <label for="tests">Пройти тесты:</label>
+            <a href="#" id="tests" target="_blank">Google Форма</a>
+
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+    <footer>
+        <p></p>
+    </footer>
+</body>
+</html>
